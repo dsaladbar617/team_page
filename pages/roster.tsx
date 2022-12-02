@@ -10,7 +10,7 @@ const Home: NextPage = ({
 	return (
 		<div className="flex min-h-screen flex-col">
 			<Header />
-			<h1>Welcome</h1>
+			<Table rosterData={roster} />
 		</div>
 	);
 };
