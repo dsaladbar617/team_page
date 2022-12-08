@@ -88,7 +88,7 @@ const Table = ({ rosterData }: { rosterData: Player[] }) => {
 				<tr>
 					{headers.map((row) => (
 						<th className="p-4 font-bold" key={row.key}>
-							{row.label}
+							{`${row.label} `}
 							<SortButton
 								columnKey={row.key}
 								onClick={() => changeSort(row.key)}
@@ -100,7 +100,7 @@ const Table = ({ rosterData }: { rosterData: Player[] }) => {
 			</thead>
 			<tbody className="divide-y divide-gray-300">
 				{sortedData().map((player: Player, index: number) => (
-					<tr className="" key={index}>
+					<tr className="hover:bg-slate-400 hover:text-black" key={index}>
 						<td className="p-4">{player.number}</td>
 						<td className="p-4">{player.name}</td>
 						<td className="p-4">{player.position}</td>

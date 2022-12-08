@@ -1,15 +1,10 @@
 import type { GetStaticProps, NextPage } from 'next';
-import Header from '../components/Header';
 import axios from '../axios';
 import { InferGetStaticPropsType } from 'next';
-import Table from '../components/Table';
 
-const Home: NextPage = ({
-	roster
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home: NextPage = ({}: InferGetStaticPropsType<typeof getStaticProps>) => {
 	return (
 		<div className="flex min-h-screen flex-col">
-			<Header />
 			<h1>Welcome</h1>
 		</div>
 	);

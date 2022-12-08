@@ -9,7 +9,6 @@ const Home: NextPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
 	return (
 		<div className="flex min-h-screen flex-col">
-			<Header />
 			<Table rosterData={roster} />
 		</div>
 	);
